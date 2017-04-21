@@ -12,12 +12,13 @@
     "babel-preset-react": "^6.23.0",
     "file-loader": "^0.10.1",
     "node-sass": "^4.5.1",
+    "react-lazy-load": "^3.0.12",
     "sass-loader": "^6.0.3",
     "webpack": "^2.3.2"
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build":"webpack -w"
+    "build": "webpack -w"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
