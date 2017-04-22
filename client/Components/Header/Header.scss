@@ -1,0 +1,40 @@
+.accueil-photo{
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  background-image: url("../../../public/img/page-accueil.jpg");
+  background-size: cover;
+  filter: brightness(50%);
+}
+.title{
+  position: absolute;
+  z-index:9999;
+  margin: 0;
+  font-size: 6rem;
+  width: 42rem;
+  color: white;
+  margin-left: 10%;
+  border-bottom :3px white solid;
+  top: 14rem;
+}
+@media screen and (max-width:320px){
+  .accueil-photo{
+    background-color: #727171;
+  }
+  .title{
+    top:9rem;
+    font-size: 4rem;
+    width: 15rem;
+  }
+}
+@media all and (max-device-width: 360px){
+  .accueil-photo{
+    background-color: #727171;
+  }
+  .title{
+    top:14rem;
+    font-size: 4rem;
+    width: 16rem;
+  }
+
+}

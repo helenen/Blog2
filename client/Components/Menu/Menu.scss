@@ -1,0 +1,32 @@
+.menu{
+  display: flex;
+  height: 15vh;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  .items{
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    list-style-type: none;
+    font-size: 2rem;
+  }
+}
+@media all and (max-device-width: 320px){
+  .menu{
+    width: 17rem;
+    height: 20vh;
+  }
+  .items{
+    width: 9rem;
+  }
+}
+@media all and (max-device-width: 360px){
+  .menu{
+    width: 19rem;
+  }
+  .items{
+    width: 9rem;
+  }
+
+}

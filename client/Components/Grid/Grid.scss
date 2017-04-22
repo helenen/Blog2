@@ -1,0 +1,26 @@
+.grid-container-main{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .grid-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 80%;
+    .grid{
+      height: 35vh;
+      width: 20rem;
+      border: 0.5px black solid;
+      background-image: url(https://source.unsplash.com/random);
+      background-size: cover;
+    }
+  }
+}
+@media all and (max-device-width: 320px){
+
+}
+@media all and (max-device-width: 360px){
+
+
+}

@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './Header.scss';
 import LazyLoad from 'react-lazy-load';
-import pageAccueil from "../../img/page-accueil.jpg";
+
 
  class Header extends React.Component {
   render() {
     return (
      <div>
-       guhuhihjpi
-       <img src={pageAccueil} />
+       <div className="accueil-photo"></div>
+       <h1 className="title">Helene Niassy</h1>
      </div>
     );
   }
