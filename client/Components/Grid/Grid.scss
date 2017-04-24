@@ -1,20 +1,27 @@
+$black:#DDDDDD;
+@mixin filter(){
+  filter: grayscale(0.85);
+}
 .grid-container-main{
-  height: 80vh;
+  height: 120vh;
   width: 100%;
   display: flex;
   justify-content: center;
   .grid-container{
     display: flex;
-    justify-content: space-between;
-    height: 80vh;
+    height: 95vh;
     width: 80%;
     flex-wrap: wrap;
     .row{
+      height: 30vh;
       display: flex;
       width: 100%;
       justify-content: space-between;
       .grid{
-
+        height: 10vh;
+        &:hover {
+          @include filter;
+    }
       }
     }
   }
