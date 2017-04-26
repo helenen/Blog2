@@ -1,35 +1,125 @@
 $black:#DDDDDD;
+
 @mixin filter(){
-  filter: grayscale(0.85);
+  filter: brightness(0.5);
+
 }
 .grid-container-main{
-  height: 120vh;
+  height: 155vh;
   width: 100%;
   display: flex;
   justify-content: center;
   .grid-container{
     display: flex;
-    height: 95vh;
+    height: 145vh;
     width: 80%;
     flex-wrap: wrap;
     .row{
-      height: 30vh;
+      height: 150vh;
       display: flex;
       width: 100%;
       justify-content: space-between;
       .grid{
-        height: 10vh;
+        height: 45vh;
         &:hover {
           @include filter;
-    }
+          transform: scale(1.05);
+	        -ms-transform: scale(1.05);
+	        -webkit-transform: scale(1.05);
+	        -o-transform: scale(1.05);
+	        -moz-transform: scale(1.05);
+          transition: all 1s;
+          -moz-transition: all 1s;
+          -webkit-transition: all 1s;
+          -o-transition: all 1s;
+        }
+        img{
+          height: 45vh;
+        }
       }
     }
   }
 }
-@media all and (max-device-width: 320px){
-
+@media all and (min-device-width:320px)and(max-device-width: 768px){
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 230vh;
+    justify-content: space-between;
+  }
+  .grid-container-main{
+    height: 450vh;
+    .grid-container{
+      height: 410vh;
+    }
+  }
 }
-@media all and (max-device-width: 360px){
-
-
+@media all and (min-device-width:800px)and(max-device-width: 980px){
+  .grid-container-main{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .grid-container{
+      display: flex;
+      height: 50vh;
+      width: 80%;
+      flex-wrap: wrap;
+      .row{
+        height: 15vh;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .grid{
+          height: 15vh;
+          img{
+            height: 15vh;
+          }
+        }
+      }
+    }
+  }
 }
+@media all and (min-device-width:800px)and(max-device-width: 980px){
+  .grid-container{
+    display: flex;
+    height: 50vh;
+    width: 80%;
+    flex-wrap: wrap;
+    .row{
+      height: 15vh;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .grid{
+        height: 35vh;
+        img{
+          height: 35vh;
+        }
+      }
+    }
+  }
+}
+@media all and (min-device-width:1280px)and(max-device-width: 1920px){
+  .grid-container-main{
+    height: 155vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .grid-container{
+      display: flex;
+      height: 145vh;
+      width: 80%;
+      flex-wrap: wrap;
+      .row{
+        height: 45vh;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .grid{
+          height: 45vh;
+        }
+      }
+    }
+  }
+  }
