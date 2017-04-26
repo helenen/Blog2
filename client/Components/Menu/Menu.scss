@@ -10,6 +10,11 @@
     width: 25rem;
     list-style-type: none;
     font-size: 2rem;
+    li{
+      &:hover{
+        color: grey;
+      }
+    }
   }
 }
 @media all and (max-device-width: 320px){
