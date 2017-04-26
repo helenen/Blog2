@@ -8,9 +8,9 @@ class Menu extends React.Component {
       <div>
         <div className="menu">
           <ul className="items">
-            <li>dssd</li>
-            <li>cdcd</li>
-            <li>dedcf</li>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About Me</li>
           </ul>
         </div>
       </div>
