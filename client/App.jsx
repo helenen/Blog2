@@ -10,25 +10,22 @@ import data from './Data.js';
 class App extends React.Component {
     constructor(){
       super();
-      this.state={
+      const index= Math.floor(Math.random() * 3);
+      this.quote= data.quotes[index];
+      console.log(this.index);
 
-      };
-    }
+  }
+
 render() {
-  return (
-    <div>
-      <Header/>
-      <Menu />
-      <Grid />
-      <div>
-          {data.quotes.map((e, index)=> {
-              return(
-              <BlackBlock id={e.id} author={e.author} quote={e.quote} key={index} />
-          )
-      })}
-    </div>
-    </div>
-  );
-}
-}
+      return (
+        <div>
+          <Header/>
+          <Menu />
+          <Grid />
+          <BlackBlock id={this.quote.id} author={this.quote.author} quote={this.quote.quote} />
+        </div>
+      );
+    }
+  }
+
 export default App;
