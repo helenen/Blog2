@@ -2,7 +2,7 @@ $black:#DDDDDD;
 .blackBlock-container{
   height: 60vh;
   width: 100%;
-  background-image: url(https://unsplash.it/1200/1400/?random);
+  background-color: lighten($black, 30%);
   background-size: cover;
   filter: brightness(0.5);
   display: flex;
