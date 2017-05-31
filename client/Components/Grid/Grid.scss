@@ -12,13 +12,13 @@ $black:#DDDDDD;
   .grid-container{
     display: flex;
     height: 145vh;
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
     .row{
       height: 150vh;
       display: flex;
       width: 100%;
-      justify-content: space-between;
+
       .grid{
         height: 45vh;
         &:hover {
@@ -41,18 +41,20 @@ $black:#DDDDDD;
   }
 }
 @media all and (min-device-width:320px)and(max-device-width: 768px){
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-    height: 230vh;
-    justify-content: space-between;
-  }
   .grid-container-main{
     height: 450vh;
+
+  }
     .grid-container{
       height: 410vh;
+      justify-content: center;
     }
-  }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        height: 230vh;
+        justify-content: center;
+      }
 }
 @media all and (min-device-width:800px)and(max-device-width: 980px){
   .grid-container-main{
@@ -69,7 +71,7 @@ $black:#DDDDDD;
         height: 15vh;
         display: flex;
         width: 100%;
-        justify-content: space-between;
+
         .grid{
           height: 15vh;
           img{
@@ -90,7 +92,9 @@ $black:#DDDDDD;
       height: 15vh;
       display: flex;
       width: 100%;
+      display: flex;
       justify-content: space-between;
+
       .grid{
         height: 35vh;
         img{
@@ -118,8 +122,8 @@ $black:#DDDDDD;
         justify-content: space-between;
         .grid{
           height: 45vh;
+          }
         }
       }
     }
-  }
   }
