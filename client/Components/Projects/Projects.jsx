@@ -17,7 +17,9 @@ class Projects extends React.Component {
             <div className="grid-container-project">
               <div className="row">
                 <div className="grid-project">
-                    <img src={photoOne} />
+                  <a href="http://localhost:8080/#/">
+                    <img src={photoOne} className="grid-project"/>
+                  </a>
                 </div>
                 <div >
                   <a href="https://tintsofpink.herokuapp.com/">
