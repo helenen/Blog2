@@ -13,7 +13,7 @@ class Projects extends React.Component {
     return (
       <div>
         <Menu className="menu-projects" />
-          <div className="grid-container-main">
+          <div className="grid-container-main-project">
             <div className="grid-container-project">
               <div className="row">
                 <div className="grid-project">
