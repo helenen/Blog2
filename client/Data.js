@@ -1,17 +1,9 @@
-var citations ={
-  "quotes": [
-    { "id": 1,
-      "author": "Bill Brandt",
-      "quote": "Cela fait partie du travail du photographe de voir plus intensément que la plupart des gens. Il doit avoir et garder en lui quelque chose de la réceptivité de l'enfant qui regarde le monde pour la première fois ou du voyageur qui pénètre dans un pays étrange.",
-    },
-    { "id": 2,
-      "author": "Yann Arthus Bertrand",
-      "quote": "En photographie, ce n'est pas le photographe qui est important."
-    },
-    { "id": 3,
-      "author": "Richard Avedon",
-      "quote": "Un portrait n'est pas une ressemblance. Dès lors qu'une émotion ou qu'un fait est traduit en photo, il cesse d'être un fait pour devenir une opinion. L'inexactitude n'existe pas en photographie. Toutes les photos sont exactes. Aucune d'elles n'est la vérité. "
-    }
-  ]
-}
-  export default citations;
+// $.get('http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=shakira&api_key=af35042293d040f030ebf1b07911b600&format=json')
+//  .then(function (data){
+//    console.log(data);
+//    $('#second').html(data.topalbums.album[1].name);
+//    $('#third').css({ 'background-image': 'url(' + data.topalbums.album[1].image[2]['#text'] + ')' });
+//  })
+//  .catch(function() {
+//   console.log("La requête est rejetée");
+// });

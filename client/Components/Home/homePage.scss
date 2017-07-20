@@ -1,0 +1,9 @@
+.header-home{
+  position: relative;
+  z-index: 2;
+  .menu-home{
+    position: absolute;
+    z-index: 1;
+    margin-top:400px;
+  }
+}
